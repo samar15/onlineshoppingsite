@@ -1,6 +1,5 @@
 package com.example.onlineshoppingsite.models.mysql;
 
-import com.example.onlineshoppingsite.enums.ROLE;
 import lombok.*;
 
 import javax.persistence.*;
@@ -29,7 +28,7 @@ public class User {
     private String password;
 
     @Column(name = "role")
-    private ROLE role;
+    private String role;
 
     @Column(name = "mobile_number")
     private Long mobileNumber;

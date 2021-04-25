@@ -1,12 +1,10 @@
 package com.example.onlineshoppingsite.configurations;
 
-import com.example.onlineshoppingsite.enums.ROLE;
 import com.example.onlineshoppingsite.models.mysql.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
