@@ -1,8 +1,20 @@
 import { React, Component } from 'react';
 import {Jumbotron } from 'react-bootstrap';
 import '../css/login.css';
-
+import axios from 'axios';
 export default class LoginPage extends Component {
+
+    constructor(props){
+        super(props)
+        this.state = {
+            users : []
+        }
+    }
+
+    componentDidMount(){ axios.get("http://localhost:8080/").then((response) => {
+                 console.log(response);
+             })
+            }
     render() {
         return (
             <div class="row"  >
